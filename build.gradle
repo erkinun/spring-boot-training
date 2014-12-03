@@ -1,5 +1,22 @@
-apply plugin: 'java'
+System.setProperty('http.proxyHost', 'proxy.pozitron.com')
+System.setProperty('http.proxyPort', '3128')
+System.setProperty('http.nonProxyHosts', '*.pozitron.com|localhost')
 
+System.setProperty('https.proxyHost', 'proxy.pozitron.com')
+System.setProperty('https.proxyPort', '3128')
+System.setProperty('https.nonProxyHosts', '*.pozitron.com|localhost')
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.8.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'spring-boot'
 
 version = '1.0'
 
