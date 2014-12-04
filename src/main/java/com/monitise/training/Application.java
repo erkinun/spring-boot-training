@@ -7,9 +7,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Created by unlue on 04/12/14.
@@ -24,13 +21,9 @@ public class Application {
 
         System.out.println("printing bean names: ");
 
-        List<String> beanListSorted = Arrays.stream(ctx.getBeanDefinitionNames())
+        Arrays.stream(ctx.getBeanDefinitionNames())
                 .sorted()
                 .map(bean -> bean.toString())
-                .collect(Collectors.toList());
-
-        for (String name : beanListSorted) {
-            System.out.println(name);
-        }
+                .forEach(bean -> System.out.println(bean));
     }
 }
