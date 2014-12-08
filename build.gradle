@@ -19,10 +19,19 @@ apply plugin: 'java'
 apply plugin: 'spring-boot'
 apply plugin: 'war'
 
+war {
+    baseName = 'spring-boot'
+    version = '1.0'
+}
+
 version = '1.0'
 
 repositories {
     mavenCentral()
+}
+
+configurations {
+    providedRuntime
 }
 
 dependencies {

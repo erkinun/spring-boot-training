@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web Gradle : spring-boot-1.0.war">
+      <configuration>
+        <webroots />
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/build/classes/main" />
     <output-test url="file://$MODULE_DIR$/build/classes/test" />
@@ -48,6 +59,12 @@
     <orderEntry type="library" exported="" name="Gradle: aopalliance-1.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: slf4j-api-1.7.7" level="project" />
     <orderEntry type="library" exported="" name="Gradle: logback-core-1.1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: spring-boot-starter-tomcat-1.1.8.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: tomcat-embed-core-7.0.55" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: tomcat-embed-el-7.0.55" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: tomcat-embed-logging-juli-7.0.55" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-actuator-1.1.8.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-actuator-1.1.8.RELEASE" level="project" />
   </component>
 </module>
 
