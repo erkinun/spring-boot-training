@@ -11,6 +11,7 @@ public class GreeterXml {
     public String name;
     public String message;
 
+    
     public GreeterXml() {
         name = "default";
         message = "message";
