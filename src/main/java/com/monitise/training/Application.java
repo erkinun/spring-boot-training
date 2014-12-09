@@ -13,7 +13,7 @@ import java.util.Arrays;
  */
 @Configuration
 @EnableAutoConfiguration
-@ComponentScan
+@ComponentScan(basePackages = "com.monitise.training")
 public class Application {
 
     public static void main(String[] args) {
