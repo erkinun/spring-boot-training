@@ -1,0 +1,5 @@
+CREATE TABLE employee (
+name VARCHAR(250) NOT NULL,
+surname VARCHAR(250) NOT NULL,
+age INT NOT NULL
+);
