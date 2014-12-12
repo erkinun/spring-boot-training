@@ -20,6 +20,9 @@ public class MvcExampleController {
         if (number < 10) {
             return new Greeter("hede", "hodo");
         }
+        else if (number > 20) {
+            throw new IllegalStateException("actually this is an illegal argument exception");
+        }
         else {
             throw new IllegalArgumentException("value sent bigger than 10");
         }
