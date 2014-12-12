@@ -2,6 +2,7 @@ package com.monitise.training.controllers;
 
 import com.monitise.training.model.BaseModel;
 import com.monitise.training.model.Greeter;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -20,7 +21,12 @@ public class MvcExampleController {
             return new Greeter("hede", "hodo");
         }
         else {
-            return BaseModel.failure();
+            throw new IllegalArgumentException("value sent bigger than 10");
         }
+    }
+
+    @ExceptionHandler(value = IllegalArgumentException.class)
+    public Object handleException(IllegalArgumentException exception) {
+        return BaseModel.failure(exception.getMessage());
     }
 }

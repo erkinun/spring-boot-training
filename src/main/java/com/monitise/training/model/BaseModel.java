@@ -28,4 +28,8 @@ public class BaseModel {
     public static BaseModel failure() {
         return new BaseModel(1, "Unknown Error");
     }
+
+    public static BaseModel failure(String cause) {
+        return new BaseModel(1, cause);
+    }
 }
