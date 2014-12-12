@@ -20,4 +20,11 @@ public class GlobalControlExceptionHandler {
         return BaseModel.failure(exception.getMessage());
     }
 
+    @ExceptionHandler(value = IllegalArgumentException.class)
+    @ResponseBody
+    @ResponseStatus(HttpStatus.NOT_ACCEPTABLE)
+    public Object handleException(IllegalArgumentException exception) {
+        return BaseModel.failure(exception.getMessage());
+    }
+
 }
