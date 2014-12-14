@@ -9,5 +9,7 @@ import java.util.List;
  */
 public interface EmployeeDao {
 
-    public List<Employee> getEmployeesByAge(int age);
+    List<Employee> getEmployeesByAge(int age);
+
+    Employee getEmployeeByName(String name);
 }
