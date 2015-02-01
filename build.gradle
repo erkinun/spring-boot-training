@@ -1,10 +1,5 @@
-System.setProperty('http.proxyHost', 'proxy.pozitron.com')
-System.setProperty('http.proxyPort', '3128')
-System.setProperty('http.nonProxyHosts', '*.pozitron.com|localhost')
-
-System.setProperty('https.proxyHost', 'proxy.pozitron.com')
-System.setProperty('https.proxyPort', '3128')
-System.setProperty('https.nonProxyHosts', '*.pozitron.com|localhost')
+//set here the http.proxyHost, http.proxyPort, and http.nonProxyHosts for the network
+//also don't forget to do that also for https
 
 buildscript {
     repositories {
