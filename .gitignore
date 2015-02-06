@@ -3,3 +3,4 @@
 build/
 spring-boot.iml
 out/
+*.DS_Store
